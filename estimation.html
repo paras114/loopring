@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimate-Looring</title>
+    <link rel="shortcut icon" href="./Images/loopring-logo.png" type="image/x-icon">
+    <!-- css files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estimation.css">
+      <!-- remixicon cdn -->
+      <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- -------------------------NAVIGATION------------ -->
+    <nav>
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="./Images/loopring-logo.png"
+            class="logo"
+            alt="loopring-logo"
+          />
+        </a>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <a href="https://web.telegram.org/k/#@LoopringChatSupportbot" target="_blank"><button class="menu-btn">Connexion</button></a>
+        </ul>
+        <button class="toggle_menu-btn hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="22"
+            height="22"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+            ></path>
+          </svg>
+        </button>
+        <div class="toggle_menu-container">
+          <div class="toggle_menu-content">
+            <button class="toggle_menu-close">
+              <i class="ri-close-line"></i>
+            </button>
+            <ul>
+              <li><a href="index.html">ACCUEIL</a></li>
+              <li><a href="entreprise.html">ENTREPRISE</a></li>
+              <li><a href="estimation.html">INSCRIPTION</a></li>
+            </ul>
+            <a href="https://web.telegram.org/k/#@LoopringChatSupportbot" target="_blank"><button class="btn-discover">Connexion</button></a>
+          </div>
+        </div>
+
+
+      
+
+
+        <div class="overlay"></div>
+      </div>
+    </nav>
+    <!-- -------------------------END OF NAVIGATION------------ -->
+
+
+      <!-- ------------------MAIN SECTION------------ -->
+      <section class="estimation_section">
+        <div class="container">
+          <div class="left">
+            <h2>Combien peut-on gagner ?</h2>
+            <div class="left_content">
+              <div class="box">
+                <h4>Êtes-vous majeur ?</h4>
+                <div class="input">
+                  <h3 class="estimate-age" data-estimate="age">Oui</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li >Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <h4>Avez-vous une carte d'identité ?</h4>
+                <div class="input">
+                  <h3 class="estimate-identityCard" data-estimate="identity">Non</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li >Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <h4>Êtes-vous motivé ?</h4>
+                <div class="input">
+                  <h3 class="estimate-motivated" data-estimate="motivated">Oui</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li>Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <h4>Avez-vous trois amis à qui vous recommanderiez Loopring ?</h4>
+                <div class="input">
+                  <h3 class="estimate-referral" data-estimate="referral">Oui</h3>
+                  <span><i class="ri-arrow-down-s-line"></i></span>
+
+                  <div class="input-sub hidden ">
+                    <h4>Choisir des valeurs</h4>
+                    <ul>
+                      <li>Oui</li>
+                      <li>Non</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="right">
+            <div class="top">
+              <div class="part-1">
+                <h2>Voici ce que tu peux gagner : </h2>
+              </div>
+              <div class="part-2">
+                <div class="box">
+                  <p class="description" >Êtes-Vous Majeur ?</p>
+                  <p class="part-2-value estimate-age-value" data-value="age">Oui</p>
+                </div>
+                <div class="box">
+                  <p class="description">Avez-Vous Une Carte D'identité ?</p>
+                  <p class="part-2-value estimate-identityCard-value" data-value="identity">0</p>
+                </div>
+                <div class="box">
+                  <p class="description" >Êtes-Vous Motivé  ?</p>
+                  <p class="part-2-value estimate-motivated-value" data-value="motivated">1000</p>
+                </div>
+                <div class="box">
+                  <p class="description" >Avez-Vous Trois Amis À Qui Vous Recommanderiez Loopring?</p>
+                  <p class="part-2-value estimate-referral-value" data-value="referral">1500</p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <h4>Total</h4>
+              <p class="total"><span>3500</span> €</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- ------------------END OF MAIN SECTION------------ -->
+
+
+      <!-- ------------------FOOTER------------ -->
+      <footer>
+        <div class="container">
+          <div class="footer_link">
+            <div class="line"></div>
+            <a href="conditions.html">Conditions générales</a>
+          </div>
+          <!-- <div class="footer_link">
+            <a href="#">Politique de confidentialité</a>
+          </div>   -->
+        </div>
+      </footer>
+
+      <!-- ------------------END OF FOOTER------------ -->
+
+      <script src="script.js"></script>
+      <script src="estimation.js"></script>
+</body>
+</html>

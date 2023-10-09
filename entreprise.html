@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise-Loopring</title>
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .entreprise_section{
+            padding: 4rem 0 3rem 0;
+            /* height: 90vh; */
+        }
+        .entreprise_section h1{
+            font-size: 2rem;
+            color: var(--clr-primary);
+        }
+        .entreprise_section .container{
+            display: flex;
+            /* flex-direction: ; */
+            gap: 1rem;
+            background-color: var(--clr-white);
+            padding: 3rem;
+            border-radius: 5px;
+        }
+        .entreprise_section h2{
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+        .entreprise_section ul{
+            margin-top: 2rem;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .content{
+          display: flex;
+          flex-direction: column;
+          gap: 2.5rem;
+        }
+        .image{
+          display: flex;
+          align-items: flex-end;
+
+        }
+        .image img{
+          width: 25rem;
+        }
+        /* RESPONSIVE */
+        @media (max-width:840px) {
+          .entreprise_section .container{
+            flex-direction: column;
+            align-items: center;
+          }
+          
+        }@media (max-width:400px) {
+          .entreprise_section .container{
+            padding: 2rem;
+          }
+          
+        }
+    </style>
+     <!-- remixicon cdn -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+     rel="stylesheet"
+   />
+</head>
+<body>
+        <!-- -------------------NAVIGATION----------- -->
+        <nav>
+          <div class="container">
+            <a href="index.html">
+              <img
+                src="./Images/loopring-logo.png"
+                class="logo"
+                alt="loopring-logo"
+              />
+            </a>
+            <ul class="menu">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="entreprise.html">Entreprise</a></li>
+              <li><a href="inscription.html">Inscription</a></li>
+              <a href="https://web.telegram.org/k/#@LoopringChatSupportbot" target="_blank"><button class="menu-btn">Connexion</button></a>
+            </ul>
+            <button class="toggle_menu-btn hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="22"
+                height="22"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+                ></path>
+              </svg>
+            </button>
+            <div class="toggle_menu-container">
+              <div class="toggle_menu-content">
+                <button class="toggle_menu-close">
+                  <i class="ri-close-line"></i>
+                </button>
+                <ul>
+                  <li><a href="index.html">ACCUEIL</a></li>
+                  <li><a href="entreprise.html">ENTREPRISE</a></li>
+                  <li><a href="estimation.html">INSCRIPTION</a></li>
+                </ul>
+                <a href="https://web.telegram.org/k/#@LoopringChatSupportbot" target="_blank"><button class="btn-discover">Connexion</button></a>
+              </div>
+            </div>
+    
+    
+          
+    
+    
+            <div class="overlay"></div>
+          </div>
+        </nav>
+        <!-- -------------------END OF NAVIGATION----------- -->
+
+        <!-- -------------------ENTREPRISE----------- -->
+        <section class="entreprise_section">
+            <div class="container">
+              <div class="content">
+
+                <h1>Bienvenue sur le site de, Loopring</h1>
+                <h2>votre passerelle vers l’univers passionnant de la rémunération en ligne ! </h2>
+                <h2>Chez Loopring, nous sommes bien plus qu’une simple entreprise, nous sommes une communauté florissante d’individus dynamiques qui ont trouvé une manière innovante et lucrative de gagner de l’argent en ligne.</h2>
+                <ul>
+                    <li>Loopring est une entreprise de services de rémunération qui vous offre une opportunité unique. </li>
+                    <li>Nous vous proposons de collaborer avec nous en créant des comptes de spéculation et, en retour, nous vous rémunérons généreusement.</li>
+                    <li>Imaginez-vous gagner jusqu’à 50€ par compte que vous créez ! </li>
+                    <li>Vous avez bien entendu, votre potentiel de revenu n’a de limites que votre engagement.
+                    </li>
+                    <li>Nos membres actifs créent en moyenne plus de 15 comptes, ce qui peut rapidement se traduire par une somme significative. </li>
+                    <li>La question est : combien êtes-vous prêt à gagner ? Chez Loopring, nous croyons en la puissance de la communauté et en la création de possibilités qui changent la vie. Rejoignez-nous dès aujourd’hui et commencez à exploiter tout votre potentiel financier avec nous !</li>
+                </ul>
+              </div>
+              <div class="image">
+                <img src="./Images/Team.png" alt="">
+              </div>
+            </div>
+        </section>
+        <!-- -------------------END OF ENTREPRISE----------- -->
+
+        <!-- -------------------FOOTER----------- -->
+        <footer>
+            <div class="container">
+              <div class="footer_link">
+                <div class="line"></div>
+                <a href="conditions.html">Conditions générales</a>
+              </div>
+            </div>
+          </footer>
+    
+        <!-- -------------------END OF FOOTER----------- -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+.registration_section{
+    padding: 4rem 0;
+}
+form{
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--clr-white);
+    padding: 3rem 3rem; 
+    border-radius: 5px;
+    display: flex;
+    gap: 5rem;
+    background-image: url('./Images/login-bg.png');
+    background-size: 25rem;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+form .left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+form .right{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.right button{
+    text-align: center ;
+}
+
+form .box{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+}
+input{
+    padding: 1rem;
+    outline: none;
+    border: 2px solid rgba(221, 221, 221, 0.696);
+    border-radius: 5px;
+    font-size: 1.06rem;
+}
+input:focus{
+    border-color:  var(--clr-primary);
+}
+input[type='file']{
+    border: 2px dotted rgba(221, 221, 221, 0.696);
+    display: none;
+}
+label[for='versoId'],label[for='rectoId']{
+    width: 100%;
+    align-items: center;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    border: 2px dotted var(--clr-primary);
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+}
+.file-boxes{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+form .error{
+    color: red;
+    font-size: .8rem;
+    position: absolute;
+    bottom: -1.3rem;
+    /* display: none; */
+}
+.error.hide{
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width:1020px) {
+    
+    form{
+        width: 100%;
+        gap: 2rem;
+    }
+    
+}
+@media (max-width:750px) {
+    form{
+        flex-direction: column;
+        height: 89rem;
+        background-position: bottom center;
+    }
+    form .left,form .right{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:450px) {
+    form{
+        height: 95rem;
+    }
+    .file-boxes{
+        flex-direction: column;
+    }   
+}
+@media (max-width:370px) {
+    form{
+        height: 100rem;
+    }
+}
